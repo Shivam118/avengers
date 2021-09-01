@@ -88,7 +88,7 @@ header .nav li a{
 header.sticky{
     background: rgba(255,255,255,0.85);
     padding: 0px 100px;
-    box-shadow: 0 5px 20px rbga(0,0,0,0,0.5);
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.5);
     height:3.75rem;
 }
 header.sticky .logo{
@@ -298,6 +298,58 @@ img{
     height: 100%;
     object-fit: cover;
 } */
+.contact{
+    background:linear-gradient(rgba(253, 229, 124, 0.35),rgba(176, 247, 118, 0.35));
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactus{
+   width: 500px;
+   margin-top: 50px;
+   padding: 75px 50px;
+   box-shadow: 10px 45px 10px rgba(0,0,0,0.1);
+   background: #fff;
+   
+}
+.contactus h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactus .inputb{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactus .inputb input,
+.contactus .inputb textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactus .inputb input[type="submit"]{
+    font-size: 1em;
+    color: #111;
+    background:#ff0157 ;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration:none ;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
 footer{
     background:rgb(70, 70, 70);
     color:white;
