@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* border:1px solid blue; */
 }
 p{
     font-weight: 300;
@@ -17,7 +18,7 @@ p{
      display: flex;
      align-items: center;
      justify-content: center;
-     background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('bg-04.jpg');
+     background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('Images/bg-04.jpg');
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -56,32 +57,18 @@ p{
 header{
     position: fixed;
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px 100px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.75s;
 }
-header.sticky{
-    background: rgba(255,255,255,0.85);
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rbga(0,0,0,0,0.5);
-}
-header.sticky a{
-    color:black;
-}
-header.sticky ul li a{
-    color:rgb(204, 34, 34);
-}
 header .logo{
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 2rem;
     text-decoration: none;
-}
-header.sticky.logo{
-color: rgb(0, 0, 0);
 }
 header .nav{
     position: relative;
@@ -90,6 +77,7 @@ header .nav{
 header .nav li{
     list-style: none;
     margin-left: 30px;
+    height:100%;
 }
 header .nav li a{
     text-decoration: none;
@@ -97,12 +85,45 @@ header .nav li a{
     font-weight: 300;
     font-size: 1.5rem;
 }
-
-header.sticky.nav li a{
+header.sticky{
+    background: rgba(255,255,255,0.85);
+    padding: 0px 100px;
+    box-shadow: 0 5px 20px rbga(0,0,0,0,0.5);
+    height:3.75rem;
+}
+header.sticky .logo{
     color: rgb(0, 0, 0);
 }
-header.sticky.nav li a:hover{
-    color: #ff0157;
+header.sticky ul{
+    height:100%;
+}
+header.sticky ul li{
+    height:90%;
+    display:flex;
+    align-items: center;
+}
+header.sticky ul li a{
+    color:rgb(204, 34, 34);
+}
+header.sticky .nav li:hover{
+    border-bottom: 5px solid #ff0157;
+}
+.goToTop{
+    height:69px;
+    width:69px;
+    border-radius: 50%;
+    background:white;
+    position:fixed;
+    right:30px;
+    bottom:20px;
+    z-index:1000;
+    display:none;
+}
+.goToTop img{
+    width:70px;
+}
+.goToTop.sticky{
+    display: inline-block;
 }
 section{
     padding: 100px; 
@@ -277,3 +298,10 @@ img{
     height: 100%;
     object-fit: cover;
 } */
+footer{
+    background:rgb(70, 70, 70);
+    color:white;
+    font-size:1.25rem;
+    text-align: center;
+    padding:10px 0px;
+}
