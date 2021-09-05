@@ -10,7 +10,6 @@
 body{
     width:100vw;
 }
-
 header{
     position: fixed;
     width: 100%;
@@ -24,7 +23,7 @@ header{
 header .logo{
     color: rgb(255, 255, 255);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 header .nav{
@@ -33,7 +32,7 @@ header .nav{
 }
 header .nav li{
     list-style: none;
-    margin-left: 30px;
+    margin-left: 50px;
     height:100%;
 }
 header .nav li a{
@@ -96,7 +95,7 @@ p{
      background: linear-gradient(45deg,rgba(255,255,255,0.1),rgba(0,0,0,0.35)),url('Images/bg-04.jpg');
      background-repeat: no-repeat;
      background-size:cover;
-     background-position: left;
+     background-position:left;
 }
 .ban .box{
     max-width: 1000px;
@@ -143,6 +142,7 @@ section{
     width: 100%;
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content:space-between;
 }
@@ -150,9 +150,8 @@ section{
     display:inline-block;
     width:50%;
 }
-img{
-    width:500px;
-
+.row .imgbx img{
+    width:650px;
 }
  .title {
     color: #111;
@@ -165,6 +164,8 @@ img{
     color: #ff0157;
     font-weight: 700;
     font-size: 4rem;
+    position:relative;
+    top:0.25rem;
 }
 .keshav{
     width: 100%;
@@ -256,52 +257,6 @@ img{
     object-fit: cover;
     z-index:0;
 }
-/* .contact{
-    background: url(5.jpg);
-    background-size:cover ;
-}
-.keshavt .title{
-    color: #fff;
-}
-.keshavt .title ,
- p
-{
-    color: #fff;
-}
-.contact .content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 40px;
-}
-.contact .content .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 20px;
-    padding:40px;
-    width: 340px;
-    flex-direction: column;
-    background: #fff;
-}
-.contact .content .box .imgbx {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.contact .content .box .imgbx img{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 .contact{
     background:linear-gradient(rgba(253, 229, 124, 0.35),rgba(176, 247, 118, 0.35));
     justify-content: center;
@@ -310,12 +265,11 @@ img{
     align-items: center;
 }
 .contactus{
-   width: 500px;
-   margin-top: 50px;
-   padding: 75px 50px;
-   box-shadow: 10px 45px 10px rgba(0,0,0,0.1);
-   background: #fff;
-   
+    width:550px;
+    margin-top: 50px;
+    padding: 75px 50px;
+    box-shadow: 10px 45px 10px rgba(0,0,0,0.1);
+    background: #fff;
 }
 .contactus h3{
     color: #111;
@@ -360,4 +314,41 @@ footer{
     font-size:1.25rem;
     text-align: center;
     padding:10px 0px;
+}
+
+@media (min-width:0px) and (max-width:800px){
+    header .logo{
+        font-size:1.5rem;
+    }
+    header .nav li{
+        margin-left:25px;
+    }
+    header .nav li a{
+        font-size:1rem;
+    }
+    .ban .box h3{
+        font-size: 2rem;
+    }
+    .ban .box p{
+        font-size: 0.5rem;
+    }
+    .ban .box .bnt{
+        font-size: 0.5rem;
+        padding:5px 15px;
+    }
+    .ban .box .bnt:hover{
+        font-size: 0.35rem;
+    }
+    .row .keshav{
+        width:90%;
+        margin:10px;
+        text-align: justify;
+    }
+    .row .imgbx img{
+        width:64vw;
+        margin-top:25px;
+    }
+    .contact form{
+        width:450px;
+    }
 }
