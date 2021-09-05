@@ -7,53 +7,10 @@
     scroll-behavior: smooth;
     /* border:1px solid blue; */
 }
-p{
-    font-weight: 300;
-    color: #111;
+body{
+    width:100vw;
 }
-.ban{
-     position: relative;
-     width: 100%;
-     height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('Images/bg-04.jpg');
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-}
-.ban .box{
-    max-width: 1000px;
-    text-align: center;
-}
-.ban .box h3{
-    font-size: 5rem;
-    color: #fff;
-}
-.ban .box p{
-    font-size: 1rem;
-    color: #fff;
-}
-.bnt{
-    font-size: 1rem;
-    color: #fff;
-    background:rgb(57, 78, 95);
-    /* background: rgb(64, 218, 26); */
-    padding: 10px 30px;
-    text-decoration: none;
-    margin-top:10px;
-    text-transform: uppercase;
-    display: inline-block;
-    transition-duration: 1.5s;
-    letter-spacing: 3px;
-    border-radius: 30px;
-    /*   */
-}
-.bnt:hover{
-    letter-spacing: 8px;
-    background: red;
-}
+
 header{
     position: fixed;
     width: 100%;
@@ -124,6 +81,53 @@ header.sticky .nav li:hover{
 }
 .goToTop.sticky{
     display: inline-block;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+.ban{
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;     
+     background: linear-gradient(45deg,rgba(255,255,255,0.1),rgba(0,0,0,0.35)),url('Images/bg-04.jpg');
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-position: left;
+}
+.ban .box{
+    max-width: 1000px;
+    text-align: center;
+}
+.ban .box h3{
+    font-size: 5rem;
+    color: #fff;
+}
+.ban .box p{
+    font-size: 1rem;
+    color: #fff;
+}
+.bnt{
+    font-size: 1rem;
+    color: #fff;
+    background:rgb(57, 78, 95);
+    /* background: rgb(64, 218, 26); */
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-top:10px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition-duration: 1.5s;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    /*   */
+}
+.bnt:hover{
+    letter-spacing: 8px;
+    background: red;
 }
 section{
     padding: 100px; 
