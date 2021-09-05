@@ -43,7 +43,8 @@ header .nav li a{
 }
 header.sticky{
     background: rgba(255,255,255,0.85);
-    padding: 0px 100px;
+    padding-top:0px;
+    padding-bottom:0px;
     box-shadow: 0 5px 20px rgba(0,0,0,0,0.5);
     height:3.75rem;
 }
@@ -54,7 +55,7 @@ header.sticky ul{
     height:100%;
 }
 header.sticky ul li{
-    height:90%;
+    height:100%;
     display:flex;
     align-items: center;
 }
@@ -136,8 +137,7 @@ section{
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
-    background:linear-gradient(rgba(61, 57, 39, 0.35),rgba(178, 174, 197, 0.548));
-}
+    }
 .row{
     position: relative;
     width: 100%;
@@ -152,7 +152,8 @@ section{
     width:50%;
 }
 .row .imgbx img{
-    width:650px;
+    width:600px;
+    height:700px;
 }
  .title {
     color: #111;
@@ -189,13 +190,13 @@ section{
     width: 340px;
     margin: 20px;
     border: 20px solid rgb(255, 255, 255);
+    background: white;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
 .menu .content .box .imgbx{
     position: relative;
     width: 100%;
     height: 300px;
-
 }
 .menu .content .box .imgbx img{
     position: absolute;
@@ -325,6 +326,9 @@ footer{
 }
 
 @media (min-width:0px) and (max-width:800px){
+    header{
+        padding:20px 30px;
+    }
     header .logo{
         font-size:1.5rem;
     }
@@ -335,17 +339,14 @@ footer{
         font-size:1rem;
     }
     .ban .box h3{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .ban .box p{
-        font-size: 0.5rem;
+        font-size: 0.85rem;
     }
     .ban .box .bnt{
-        font-size: 0.5rem;
-        padding:5px 15px;
-    }
-    .ban .box .bnt:hover{
-        font-size: 0.35rem;
+        font-size: 0.75rem;
+        padding:10px 20px;
     }
     .row .keshav{
         width:90%;
@@ -353,7 +354,8 @@ footer{
         text-align: justify;
     }
     .row .imgbx img{
-        width:64vw;
+        width:430px;
+        height:500px;
         margin-top:25px;
     }
     .contact form{
