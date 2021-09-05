@@ -136,6 +136,7 @@ section{
     /* border: 2px solid red; */
     justify-content: center;
     align-items: center;
+    background:linear-gradient(rgba(61, 57, 39, 0.35),rgba(178, 174, 197, 0.548));
 }
 .row{
     position: relative;
@@ -174,6 +175,9 @@ section{
     align-items: center;
     flex-direction: column;
 }
+.menu{
+    background:linear-gradient(rgba(230, 197, 126, 0.35),rgba(35, 51, 48, 0.35));
+}
 .menu .content{
     display: flex;
     justify-content: center;
@@ -205,6 +209,10 @@ section{
     font-weight: 400;
     padding: 15px 0 5px 20px;
 }
+.expert{
+    background:linear-gradient(rgba(102, 90, 35, 0.35),rgba(122, 236, 240, 0.35));
+}
+
 .expert .content{
     display: flex;
     justify-content: center;
@@ -246,7 +254,7 @@ section{
     content:'Steve Rogers';
 }
 .expert .content .box:nth-child(3) .imgbx::after{
-    content:'Dr.Bruce Banner';
+    content:'Thor Odinson';
 }
 .expert .content .box .imgbx img{
     position: absolute;
