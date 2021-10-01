@@ -307,12 +307,14 @@ section{
     font-weight: 300;
     resize: none;
 }
-.contactus .inputb input[type="submit"]{
+.contactus .inputb a{
     font-size: 1em;
     color: #111;
     background:#ff0157 ;
     display: inline-block;
     text-transform: uppercase;
+    text-align:center;
+    padding:8px 0;
     text-decoration:none ;
     letter-spacing: 2px;
     transition: 0.5s;
